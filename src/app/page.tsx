@@ -22,7 +22,7 @@ const PILLARS = [
   },
   {
     tag: "Neuro-Ischemia",
-    title: "Restoring Perfusion",
+    title: "Protecting Infarct Tissue",
     body: "Therapeutics designed to protect tissue and recover function after ischemic insult.",
   },
 ];

@@ -29,7 +29,7 @@ export default function ApexaaLogo({ className = "", dark = false }: ApexaaLogoP
         </defs>
       </svg>
       <span className={`text-xl font-semibold tracking-tight ${textColor}`}>
-        apex<span className={accentColor}>aa</span>
+        Apex<span className={accentColor}>aa</span>
       </span>
     </div>
   );
