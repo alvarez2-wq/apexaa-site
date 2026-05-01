@@ -47,9 +47,6 @@ export const metadata: Metadata = {
     description:
       "Late-stage biotech advancing therapeutics for neuro-inflammation and neuro-ischemia.",
   },
-  icons: {
-    icon: "/favicon.ico",
-  },
   robots: {
     index: true,
     follow: true,
