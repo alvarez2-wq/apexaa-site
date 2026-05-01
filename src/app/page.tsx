@@ -35,7 +35,6 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 py-6 flex items-center justify-between">
           <ApexaaLogo dark />
           <nav className="hidden md:flex items-center gap-8 text-sm text-slate-300">
-            <a href="#pipeline" className="hover:text-white transition-colors">Pipeline</a>
             <a href="#approach" className="hover:text-white transition-colors">Approach</a>
           </nav>
         </div>
@@ -51,14 +50,6 @@ export default function Home() {
           <p className="mt-8 text-lg md:text-xl text-slate-300 max-w-3xl leading-relaxed">
             Apexaa is advancing late-stage therapeutics for the most under-served disorders of the central nervous system — from acute ischemic injury to chronic neuro-inflammatory disease.
           </p>
-          <div className="mt-12 flex flex-wrap gap-4">
-            <a
-              href="#pipeline"
-              className="inline-flex items-center px-6 py-3 rounded-full bg-white text-[#0a1628] font-semibold hover:bg-slate-100 transition-colors"
-            >
-              Pipeline
-            </a>
-          </div>
         </section>
       </header>
 
