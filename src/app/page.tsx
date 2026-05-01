@@ -37,7 +37,6 @@ export default function Home() {
           <nav className="hidden md:flex items-center gap-8 text-sm text-slate-300">
             <a href="#pipeline" className="hover:text-white transition-colors">Pipeline</a>
             <a href="#approach" className="hover:text-white transition-colors">Approach</a>
-            <a href="mailto:contact@apexaa.bio" className="hover:text-white transition-colors">Contact</a>
           </nav>
         </div>
 
@@ -58,12 +57,6 @@ export default function Home() {
               className="inline-flex items-center px-6 py-3 rounded-full bg-white text-[#0a1628] font-semibold hover:bg-slate-100 transition-colors"
             >
               Pipeline
-            </a>
-            <a
-              href="mailto:contact@apexaa.bio"
-              className="inline-flex items-center px-6 py-3 rounded-full border border-white/30 text-white font-semibold hover:bg-white/10 transition-colors"
-            >
-              Contact
             </a>
           </div>
         </section>
@@ -100,14 +93,8 @@ export default function Home() {
             More information coming soon
           </p>
           <p className="text-slate-700 max-w-2xl mx-auto">
-            Pipeline detail, clinical-trial programs, and team information will be published shortly. For investor &amp; partnering inquiries, please reach out directly.
+            Pipeline detail, clinical-trial programs, and team information will be published shortly.
           </p>
-          <a
-            href="mailto:contact@apexaa.bio"
-            className="mt-6 inline-flex items-center px-6 py-3 rounded-full bg-[#0a1628] text-white font-semibold hover:bg-[#1a3a6b] transition-colors"
-          >
-            contact@apexaa.bio
-          </a>
         </div>
       </section>
 

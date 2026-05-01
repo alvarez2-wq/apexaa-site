@@ -36,7 +36,7 @@ export default async function OGImage() {
           </svg>
           <div style={{ display: "flex", fontSize: "44px", fontWeight: 600, letterSpacing: "-0.02em" }}>
             <span>Apex</span>
-            <span style={{ color: "#7c4dff" }}>aa</span>
+            <span style={{ color: "#b388ff" }}>aa</span>
           </div>
         </div>
 
