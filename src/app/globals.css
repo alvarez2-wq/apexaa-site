@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: #ffffff;
+  --color-foreground: #0f172a;
+  --color-navy: #0a1628;
+  --color-navy-light: #132041;
+  --color-brand-blue: #1a3a6b;
+  --color-brand-red: #c62828;
+  --color-accent-green: #00c853;
+  --color-accent-purple: #7c4dff;
+  --color-slate-50: #f8fafc;
+  --color-slate-100: #f1f5f9;
+  --color-slate-200: #e2e8f0;
+  --color-slate-300: #cbd5e1;
+  --color-slate-400: #94a3b8;
+  --color-slate-500: #64748b;
+  --color-slate-600: #475569;
+  --color-slate-700: #334155;
+  --color-slate-800: #1e293b;
+  --color-slate-900: #0f172a;
+  --font-sans: var(--font-geist-sans);
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+/* Gradient animation for hero */
+@keyframes gradientShift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, #0a1628 0%, #132041 25%, #1a3a6b 50%, #2d1b69 75%, #0a1628 100%);
+  background-size: 300% 300%;
+  will-change: background-position;
+  animation: gradientShift 12s ease infinite;
+}
+@media (max-width: 767px) {
+  .hero-gradient {
+    background: linear-gradient(135deg, #0a1628 0%, #132041 40%, #1a3a6b 100%);
+    background-size: 100% 100%;
+    animation: none;
+    will-change: auto;
+  }
+}
+
+/* Section fade-in */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.7s ease-out forwards;
+  will-change: opacity, transform;
+}
+
+/* Glass card */
+.glass-card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+@media (min-width: 768px) {
+  .glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+  }
+}
+
+/* Stat card hover */
+.stat-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform: translateZ(0);
+}
+.stat-card:hover {
+  transform: translateY(-4px) translateZ(0);
+  box-shadow: 0 12px 40px rgba(26, 58, 107, 0.25);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #94a3b8;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}

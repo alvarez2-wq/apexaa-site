@@ -1,0 +1,36 @@
+interface ApexaaLogoProps {
+  className?: string;
+  dark?: boolean;
+}
+
+export default function ApexaaLogo({ className = "", dark = false }: ApexaaLogoProps) {
+  const textColor = dark ? "text-white" : "text-slate-900";
+  const accentColor = dark ? "text-[#7c4dff]" : "text-[#1a3a6b]";
+  return (
+    <div className={`flex items-center gap-2 ${className}`}>
+      <svg
+        width="28"
+        height="28"
+        viewBox="0 0 32 32"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+      >
+        <path
+          d="M16 3 L29 27 L22 27 L16 14 L10 27 L3 27 Z"
+          fill="url(#apexaa-grad)"
+        />
+        <defs>
+          <linearGradient id="apexaa-grad" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stopColor="#1a3a6b" />
+            <stop offset="60%" stopColor="#7c4dff" />
+            <stop offset="100%" stopColor="#c62828" />
+          </linearGradient>
+        </defs>
+      </svg>
+      <span className={`text-xl font-semibold tracking-tight ${textColor}`}>
+        apex<span className={accentColor}>aa</span>
+      </span>
+    </div>
+  );
+}
