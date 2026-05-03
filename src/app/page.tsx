@@ -37,6 +37,7 @@ export default function Home() {
           <ApexaaLogo dark />
           <nav className="hidden md:flex items-center gap-8 text-sm text-slate-300">
             <a href="#approach" className="hover:text-white transition-colors">Approach</a>
+            <a href="#contact" className="hover:text-white transition-colors">Contact</a>
           </nav>
         </div>
 
@@ -79,7 +80,7 @@ export default function Home() {
       </section>
 
       {/* ─── Quiet "more info" line ──────────────────────────────── */}
-      <section id="pipeline" className="max-w-7xl mx-auto px-6 pb-24">
+      <section id="contact" className="max-w-7xl mx-auto px-6 pb-24">
         <div className="rounded-2xl bg-slate-50 border border-slate-200 p-10 md:p-14 text-center">
           <p className="text-xs uppercase tracking-[0.2em] text-[#1a3a6b] font-semibold mb-3">
             More information coming soon
