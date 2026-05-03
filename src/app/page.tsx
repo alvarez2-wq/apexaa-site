@@ -1,4 +1,5 @@
 import ApexaaLogo from "@/components/ApexaaLogo";
+import ContactButton from "@/components/ContactButton";
 
 const BUILD_TIMESTAMP = (() => {
   const d = new Date();
@@ -86,12 +87,7 @@ export default function Home() {
           <p className="text-slate-700 max-w-2xl mx-auto">
             Pipeline detail, clinical-trial programs, and team information will be published shortly. For investor &amp; partnering inquiries, please reach out directly.
           </p>
-          <a
-            href="mailto:contact@apexaa.bio"
-            className="mt-6 inline-flex items-center px-6 py-3 rounded-full bg-[#0a1628] text-white font-semibold hover:bg-[#1a3a6b] transition-colors"
-          >
-            contact@apexaa.bio
-          </a>
+          <ContactButton email="contact@apexaa.bio" />
         </div>
       </section>
 
