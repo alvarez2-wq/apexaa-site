@@ -20,7 +20,7 @@ export default function ApexaaLogo({ className = "", dark = false }: ApexaaLogoP
         <ellipse cx="100" cy="100" rx="18" ry="78" fill="#7c4dff" transform="rotate(45 100 100)" />
         <ellipse cx="100" cy="100" rx="18" ry="78" fill="#ffffff" transform="rotate(90 100 100)" />
         <ellipse cx="100" cy="100" rx="18" ry="78" fill="#7c4dff" transform="rotate(135 100 100)" />
-        <circle cx="100" cy="100" r="14" fill="#7c4dff" />
+        <circle cx="100" cy="100" r="14" fill="#ffffff" />
       </svg>
       <span className={`text-2xl font-semibold tracking-tight ${textColor}`}>
         apexaa<span className={accent}>bio</span>

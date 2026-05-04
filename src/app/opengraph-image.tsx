@@ -29,7 +29,7 @@ export default async function OGImage() {
             <ellipse cx="100" cy="100" rx="18" ry="78" fill="#7c4dff" transform="rotate(45 100 100)" />
             <ellipse cx="100" cy="100" rx="18" ry="78" fill="#ffffff" transform="rotate(90 100 100)" />
             <ellipse cx="100" cy="100" rx="18" ry="78" fill="#7c4dff" transform="rotate(135 100 100)" />
-            <circle cx="100" cy="100" r="14" fill="#7c4dff" />
+            <circle cx="100" cy="100" r="14" fill="#ffffff" />
           </svg>
           <div style={{ display: "flex", fontSize: "44px", fontWeight: 600, letterSpacing: "-0.02em" }}>
             <span>apexaa</span>
