@@ -23,20 +23,17 @@ export default async function OGImage() {
         }}
       >
         {/* Logo */}
-        <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
-          <svg width="56" height="56" viewBox="0 0 32 32">
-            <defs>
-              <linearGradient id="g" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
-                <stop offset="0%" stopColor="#1a3a6b" />
-                <stop offset="60%" stopColor="#7c4dff" />
-                <stop offset="100%" stopColor="#c62828" />
-              </linearGradient>
-            </defs>
-            <path d="M16 3 L29 27 L22 27 L16 14 L10 27 L3 27 Z" fill="url(#g)" />
+        <div style={{ display: "flex", alignItems: "center", gap: "20px" }}>
+          <svg width="64" height="64" viewBox="0 0 200 200">
+            <ellipse cx="100" cy="100" rx="18" ry="78" fill="#ffffff" transform="rotate(0 100 100)" />
+            <ellipse cx="100" cy="100" rx="18" ry="78" fill="#7c4dff" transform="rotate(45 100 100)" />
+            <ellipse cx="100" cy="100" rx="18" ry="78" fill="#ffffff" transform="rotate(90 100 100)" />
+            <ellipse cx="100" cy="100" rx="18" ry="78" fill="#7c4dff" transform="rotate(135 100 100)" />
+            <circle cx="100" cy="100" r="14" fill="#7c4dff" />
           </svg>
           <div style={{ display: "flex", fontSize: "44px", fontWeight: 600, letterSpacing: "-0.02em" }}>
-            <span>Apex</span>
-            <span style={{ color: "#b388ff" }}>aa</span>
+            <span>apexaa</span>
+            <span style={{ color: "#b388ff" }}>bio</span>
           </div>
         </div>
 
