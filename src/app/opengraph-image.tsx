@@ -73,7 +73,7 @@ export default async function OGImage() {
               <span style={{ color: "#c62828" }}>Neuro-Ischemia</span>
             </div>
             <div style={{ display: "flex" }}>
-              <span>at clinical scale.</span>
+              <span>at the root cause.</span>
             </div>
           </div>
         </div>

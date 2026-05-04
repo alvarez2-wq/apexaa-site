@@ -47,7 +47,7 @@ export default function Home() {
             Phase III &nbsp;•&nbsp; Neurotherapeutics
           </p>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.05] max-w-5xl">
-            Targeting <span className="text-[#7c4dff]">Neuro-Inflammation</span> &amp; <span className="text-[#c62828]">Neuro-Ischemia</span> at clinical scale.
+            Targeting <span className="text-[#7c4dff]">Neuro-Inflammation</span> &amp; <span className="text-[#c62828]">Neuro-Ischemia</span> at the root cause.
           </h1>
           <p className="mt-8 text-lg md:text-xl text-slate-300 max-w-3xl leading-relaxed">
             Apexaa is advancing late-stage therapeutics for the most under-served disorders of the central nervous system — from acute ischemic injury to chronic neuro-inflammatory disease.
