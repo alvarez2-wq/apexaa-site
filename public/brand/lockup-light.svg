@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 80" width="900" height="200">
+  <defs>
+    <linearGradient id="lockup-grad" x1="0" y1="0" x2="60" y2="60" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1a3a6b"/>
+      <stop offset="60%" stop-color="#7c4dff"/>
+      <stop offset="100%" stop-color="#c62828"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(8, 10) scale(1.875)">
+    <path d="M16 3 L29 27 L22 27 L16 14 L10 27 L3 27 Z" fill="url(#lockup-grad)"/>
+  </g>
+  <text x="84" y="58"
+    font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, system-ui, sans-serif"
+    font-size="48" font-weight="600" letter-spacing="-1.5">
+    <tspan fill="#0a1628">apexaa</tspan><tspan fill="#7c4dff">bio</tspan>
+  </text>
+</svg>
