@@ -76,7 +76,47 @@ export default function BrandPage() {
         <hr className="my-16 border-slate-200" />
 
         <section>
-          <h2 className="text-2xl font-bold mb-2">Outlined versions</h2>
+          <h2 className="text-2xl font-bold mb-2">PNG raster — for PowerPoint Online</h2>
+          <p className="text-slate-600 mb-8">
+            PowerPoint Online&apos;s SVG importer inserts visible whitespace between adjacent path elements (a known PPT limitation). <strong>Use these PNG exports instead</strong> — flat 8× resolution images, transparent background, no font fallback, no path decomposition. Drop into PPT via Insert → Pictures → This Device.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {[
+              { file: "wordmark-light.png", label: "Wordmark — light bg", bg: "white" },
+              { file: "wordmark-dark.png", label: "Wordmark — dark bg (light violet)", bg: "#0a1628" },
+              { file: "wordmark-dark-violet.png", label: "Wordmark — dark bg (deep violet)", bg: "#0a1628" },
+              { file: "wordmark-mono-navy.png", label: "Mono navy", bg: "white" },
+              { file: "wordmark-mono-white.png", label: "Mono white", bg: "#0a1628" },
+              { file: "wordmark-mono-black.png", label: "Mono black", bg: "white" },
+              { file: "lockup-light.png", label: "Full lockup — light bg", bg: "white" },
+              { file: "lockup-dark.png", label: "Full lockup — dark bg", bg: "#0a1628" },
+            ].map((v) => {
+              const isDark = v.bg !== "white";
+              return (
+                <div key={v.file}>
+                  <div className="flex items-baseline justify-between mb-2">
+                    <span className="text-sm font-medium">{v.label}</span>
+                    <a href={`/brand/${v.file}`} download className="text-xs text-[#7c4dff] hover:underline">
+                      Download .png ↓
+                    </a>
+                  </div>
+                  <div
+                    className={`rounded-xl border ${isDark ? "border-slate-800" : "border-slate-200"} flex items-center justify-center p-8`}
+                    style={{ background: v.bg }}
+                  >
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src={`/brand/${v.file}`} alt={v.label} style={{ height: 56, width: "auto" }} />
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </section>
+
+        <hr className="my-16 border-slate-200" />
+
+        <section>
+          <h2 className="text-2xl font-bold mb-2">Outlined SVG versions</h2>
           <p className="text-slate-600 mb-8">
             Same wordmarks above, but the text is converted to vector paths instead of <code className="bg-slate-100 px-1 rounded">font-family: Inter</code>. <strong>Use these for PowerPoint, Figma, Illustrator, or any context where Inter isn&apos;t installed.</strong> They render pixel-identical anywhere — no font fallback weight differences. Trade-off: text isn&apos;t editable.
           </p>
