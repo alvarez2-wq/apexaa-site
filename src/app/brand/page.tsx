@@ -18,6 +18,17 @@ const VARIANTS = [
   { file: "lockup-dark.svg", label: "Full lockup — dark bg", bg: "#0a1628", note: "For dark slides and the navy hero." },
 ];
 
+const OUTLINED = [
+  { file: "wordmark-light-outlined.svg", label: "Wordmark — light bg", bg: "white" },
+  { file: "wordmark-dark-outlined.svg", label: "Wordmark — dark bg (light violet)", bg: "#0a1628" },
+  { file: "wordmark-dark-violet-outlined.svg", label: "Wordmark — dark bg (deep violet)", bg: "#0a1628" },
+  { file: "wordmark-mono-navy-outlined.svg", label: "Mono navy", bg: "white" },
+  { file: "wordmark-mono-white-outlined.svg", label: "Mono white", bg: "#0a1628" },
+  { file: "wordmark-mono-black-outlined.svg", label: "Mono black", bg: "white" },
+  { file: "lockup-light-outlined.svg", label: "Full lockup — light bg", bg: "white" },
+  { file: "lockup-dark-outlined.svg", label: "Full lockup — dark bg", bg: "#0a1628" },
+];
+
 export default function BrandPage() {
   return (
     <main className="min-h-screen bg-white text-slate-900 py-16 px-6">
@@ -61,6 +72,37 @@ export default function BrandPage() {
             );
           })}
         </div>
+
+        <hr className="my-16 border-slate-200" />
+
+        <section>
+          <h2 className="text-2xl font-bold mb-2">Outlined versions</h2>
+          <p className="text-slate-600 mb-8">
+            Same wordmarks above, but the text is converted to vector paths instead of <code className="bg-slate-100 px-1 rounded">font-family: Inter</code>. <strong>Use these for PowerPoint, Figma, Illustrator, or any context where Inter isn&apos;t installed.</strong> They render pixel-identical anywhere — no font fallback weight differences. Trade-off: text isn&apos;t editable.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {OUTLINED.map((v) => {
+              const isDark = v.bg !== "white";
+              return (
+                <div key={v.file}>
+                  <div className="flex items-baseline justify-between mb-2">
+                    <span className="text-sm font-medium">{v.label}</span>
+                    <a href={`/brand/${v.file}`} download className="text-xs text-[#7c4dff] hover:underline">
+                      Download ↓
+                    </a>
+                  </div>
+                  <div
+                    className={`rounded-xl border ${isDark ? "border-slate-800" : "border-slate-200"} flex items-center justify-center p-8`}
+                    style={{ background: v.bg }}
+                  >
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src={`/brand/${v.file}`} alt={v.label} style={{ height: 56, width: "auto" }} />
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </section>
 
         <hr className="my-16 border-slate-200" />
 
