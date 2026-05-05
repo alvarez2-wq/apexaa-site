@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 80" width="900" height="200">
   <defs>
-    <linearGradient id="lockup-grad" x1="0" y1="0" x2="60" y2="60" gradientUnits="userSpaceOnUse">
+    <linearGradient id="lockup-grad" x1="0" y1="0" x2="1" y2="1" gradientUnits="objectBoundingBox">
       <stop offset="0%" stop-color="#1a3a6b"/>
       <stop offset="60%" stop-color="#7c4dff"/>
       <stop offset="100%" stop-color="#c62828"/>

@@ -9,7 +9,8 @@ export const metadata: Metadata = {
 
 const VARIANTS = [
   { file: "wordmark-light.svg", label: "Wordmark — light bg", bg: "white", note: "Default. Use on white, slate-50, light photos." },
-  { file: "wordmark-dark.svg", label: "Wordmark — dark bg", bg: "#0a1628", note: "Use on navy hero, dark slides, deep backgrounds." },
+  { file: "wordmark-dark.svg", label: "Wordmark — dark bg (light violet)", bg: "#0a1628", note: "Use on navy hero, dark slides, deep backgrounds. Softer feel." },
+  { file: "wordmark-dark-violet.svg", label: "Wordmark — dark bg (deep violet)", bg: "#0a1628", note: "Higher-contrast variant. Use when you want the violet to pop more." },
   { file: "wordmark-mono-navy.svg", label: "Wordmark — mono navy", bg: "white", note: "Single color. For 1-color print, embossing, watermarks on light." },
   { file: "wordmark-mono-white.svg", label: "Wordmark — mono white", bg: "#0a1628", note: "Single color. For dark photo overlays, busy imagery." },
   { file: "wordmark-mono-black.svg", label: "Wordmark — mono black", bg: "white", note: "Pure black. For legal/regulatory print, fax, B&W contexts." },
@@ -22,7 +23,16 @@ export default function BrandPage() {
     <main className="min-h-screen bg-white text-slate-900 py-16 px-6">
       <div className="max-w-5xl mx-auto">
         <h1 className="text-4xl font-bold mb-2">Apexaabio brand assets</h1>
-        <p className="text-slate-600 mb-12">Right-click any image → Save As to download. SVG scales to any size without quality loss.</p>
+        <p className="text-slate-600 mb-4">Right-click any image → Save As to download. SVG scales to any size without quality loss.</p>
+        <p className="mb-12">
+          <a
+            href="/brand/Apexaabio%20Brand%20Assets.webloc"
+            download
+            className="inline-flex items-center gap-2 text-sm text-[#7c4dff] hover:underline"
+          >
+            ⤓ Download desktop shortcut to this page (.webloc)
+          </a>
+        </p>
 
         <div className="space-y-12">
           {VARIANTS.map((v) => {
