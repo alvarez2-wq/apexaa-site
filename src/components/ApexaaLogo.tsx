@@ -25,7 +25,7 @@ export default function ApexaaLogo({ className = "", dark = false }: ApexaaLogoP
         </defs>
         <path d="M16 3 L29 27 L22 27 L16 14 L10 27 L3 27 Z" fill="url(#apexaa-grad)" />
       </svg>
-      <span className={`text-2xl font-semibold tracking-tight ${textColor}`}>
+      <span className={`text-2xl font-medium tracking-tight ${textColor}`}>
         apexaa<span className={accent}>bio</span>
       </span>
     </div>
